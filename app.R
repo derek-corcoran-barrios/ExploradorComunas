@@ -46,7 +46,7 @@ server <- function(input, output) {
         
       leaflet() %>% 
         addProviderTiles("Esri.WorldImagery") %>% 
-        leaflet::addPolygons(data = Polis)
+        leaflet::addPolygons(data = Polis, label = ~Ciudad)
     })
 }
 
